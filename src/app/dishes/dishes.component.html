@@ -1,0 +1,27 @@
+
+<br>
+<div class="continar">
+    <div class="row">
+        <div *ngFor =" let meal of meals" class="col-md-4">
+            <p>{{meal.id}}</p>
+            <p><span>{{meal.name}}</span></p>
+            <img [src]="meal.image">
+            <p>{{meal.description}}</p>
+            <p><span>price:</span>{{meal.price}}L.E</p>
+            
+            <button (click)="selected(meal)" class="btn btn-info">see more</button>
+            
+        </div>
+
+        
+
+    </div>
+   
+</div>
+<div class="container">
+           <div class="text-center w-100">
+    <img [src]="imgSrc">
+    <p class="fw-bolder" [style.color]="price>95? 'red' : 'green'">{{name}}</p>
+            </div>
+
+</div>
